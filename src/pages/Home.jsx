@@ -6,11 +6,14 @@ import Courses from "../components/sections/Courses";
 import Faculty from "../components/sections/Faculty";
 import Gallery from "../components/sections/Gallery";
 import Contact from "../components/sections/Contact";
+import NoticesCarousel from "../components/notices/NoticesCarousel";
+
 
 export default function Home() {
   return (
     <>
       <QuoteLine />
+      {/* <NoticesCarousel /> */}
       <NoticeSlider />
       <About />
       <Leadership />

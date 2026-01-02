@@ -1,16 +1,38 @@
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
-import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
 
-export default function App() {
+import Home from "./pages/Home";
+import AdminLogin from "./AdminLogin";
+import AdminDashboard from "./AdminDashboard";
+
+function DefaultLayout({ children }) {
   return (
     <>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      {children}
       <Footer />
     </>
+  );
+}
+
+export default function App() {
+  return (
+    <Routes>
+
+      {/* Normal Site Layout */}
+      <Route
+        path="/"
+        element={
+          <DefaultLayout>
+            <Home />
+          </DefaultLayout>
+        }
+      />
+
+      {/* NO Header / Footer */}
+      <Route path="/login" element={<AdminLogin />} />
+      <Route path="/admin" element={<AdminDashboard />} />
+    </Routes>
   );
 }
