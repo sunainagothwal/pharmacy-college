@@ -53,21 +53,21 @@ export default function NoticeSlider() {
 
         <button
           onClick={prev}
-          className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/60 text-white text-2xl px-4 py-2"
+          className="absolute left-4 top-1/2 -translate-y-1/2 bg-primary text-white text-2xl px-4 py-2"
         >
           ‹
         </button>
 
         <button
           onClick={next}
-          className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/60 text-white text-2xl px-4 py-2"
+          className="absolute right-4 top-1/2 -translate-y-1/2 bg-primary text-white text-2xl px-4 py-2"
         >
           ›
         </button>
       </div>
 
       <div className="border-t border-gray-300 bg-gray-100 py-3 px-4 flex items-center gap-4 text-sm">
-        <span className="bg-black text-white px-3 py-1">Daily Alerts:</span>
+        <span className="bg-primary text-white px-3 py-1">Daily Alerts:</span>
         <span className="text-gray-800">
           Post HSC Diploma in Pharmacy (D. Pharmacy) last date of registration
           is 29th July 2022. Visit https://phd22.dte.maharashtra.gov.in

@@ -11,12 +11,12 @@ export default function Header() {
     { name: "About", path: "/about" },
     { name: "Courses", path: "/courses" },
     { name: "Faculty", path: "/faculty" },
+    { name: "FRA", path: "/fra" },
     { name: "Contact", path: "/contact" },
   ];
 
   return (
     <header>
-      {/* Top Bar */}
       <div className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-3">
           <div className="flex items-center gap-3">
@@ -26,32 +26,52 @@ export default function Header() {
               className="h-10 sm:h-12 w-10 sm:w-12 object-contain"
             />
             <div>
-              <h1 className="text-xs sm:text-sm font-semibold text-blue-900 leading-tight">
+              <h1 className="text-xs sm:text-sm font-semibold text-primary leading-tight">
                 Swargiya Lilawati Satish Awhad
               </h1>
-              <p className="text-xs sm:text-sm text-blue-900">Pharmacy College</p>
+              <p className="text-xs sm:text-sm text-textDark">
+                Pharmacy College
+              </p>
             </div>
           </div>
-          <div className="hidden md:flex items-center gap-4 sm:gap-5 text-xs sm:text-sm text-gray-600">
-            <span>📞 +91 XXXXX XXXXX</span>
-            <a href="#" className="hover:text-blue-900 transition">Facebook</a>
-            <a href="#" className="hover:text-blue-900 transition">Instagram</a>
+
+          <div className="hidden md:flex items-center gap-4 sm:gap-5 text-xs sm:text-sm text-textDark">
+            <span>📞 +91 7304955143</span>
+            <a href="#" className="hover:text-primary transition">
+              Facebook
+            </a>
+            <a href="#" className="hover:text-primary transition">
+              Instagram
+            </a>
           </div>
-          {/* Hamburger Button for Mobile */}
+
           <button
-            className="md:hidden text-blue-900"
+            className="md:hidden text-primary"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d={
+                  isMenuOpen
+                    ? "M6 18L18 6M6 6l12 12"
+                    : "M4 6h16M4 12h16M4 18h16"
+                }
+              />
             </svg>
           </button>
         </div>
       </div>
 
-      {/* Navigation */}
-      <nav className="bg-blue-900 sticky top-0 z-50">
+      <nav className="bg-primary sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="hidden md:flex items-center justify-center h-14">
             {navItems.map((item) => (
@@ -60,7 +80,7 @@ export default function Header() {
                 to={item.path}
                 className={({ isActive }) =>
                   `h-14 flex-1 max-w-[150px] flex items-center justify-center text-xs sm:text-sm font-medium text-white transition ${
-                    isActive ? "bg-red-600" : "hover:bg-blue-800"
+                    isActive ? "bg-primaryDark" : "hover:bg-primaryDark"
                   }`
                 }
               >
@@ -68,16 +88,16 @@ export default function Header() {
               </NavLink>
             ))}
           </div>
-          {/* Mobile Menu */}
+
           {isMenuOpen && (
-            <div className="md:hidden flex flex-col bg-blue-800">
+            <div className="md:hidden flex flex-col bg-primaryDark">
               {navItems.map((item) => (
                 <NavLink
                   key={item.name}
                   to={item.path}
                   className={({ isActive }) =>
                     `h-12 flex items-center justify-center text-sm font-medium text-white transition ${
-                      isActive ? "bg-red-600" : "hover:bg-blue-700"
+                      isActive ? "bg-primary" : "hover:bg-primary"
                     }`
                   }
                   onClick={() => setIsMenuOpen(false)}
@@ -90,7 +110,6 @@ export default function Header() {
         </div>
       </nav>
 
-      {/* Banner */}
       <div className="relative w-full h-64 sm:h-80 lg:h-[520px] overflow-hidden">
         <img
           src={banner}
@@ -106,7 +125,8 @@ export default function Header() {
               Pharmacy College
             </h2>
             <p className="mt-4 text-xs sm:text-sm text-white/90">
-              Committed to excellence in pharmaceutical education, research, and ethical professional practices.
+              Committed to excellence in pharmaceutical education, research, and
+              ethical professional practices.
             </p>
           </div>
         </div>

@@ -8,16 +8,14 @@ export default function About() {
         backgroundImage: `url(${aboutBg})`,
       }}
     >
-      <div className="bg-white/70">
+      <div className="bg-white/80">
         <div
           className="py-24"
           style={{ paddingLeft: "20%", paddingRight: "20%" }}
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="bg-white p-10 shadow-md">
-              <h3 className="text-2xl font-semibold text-blue-900">
-                About Us
-              </h3>
+              <h3 className="text-2xl font-semibold text-primary">About Us</h3>
 
               <p className="mt-6 text-sm text-gray-700 leading-relaxed">
                 Swargiya Lilawati Satish Awhad Pharmacy College strives to be a
@@ -40,13 +38,13 @@ export default function About() {
 
             <div className="relative w-full h-[420px]">
               <div className="absolute bottom-8 left-0 right-0 flex gap-6 px-6">
-                <div className="flex-1 bg-red-600 text-white text-center py-6">
+                <div className="flex-1 bg-primary text-white text-center py-6 font-medium">
                   Integrity
                 </div>
-                <div className="flex-1 bg-red-600 text-white text-center py-6">
+                <div className="flex-1 bg-primary text-white text-center py-6 font-medium">
                   Ethics
                 </div>
-                <div className="flex-1 bg-red-600 text-white text-center py-6">
+                <div className="flex-1 bg-primary text-white text-center py-6 font-medium">
                   Excellence
                 </div>
               </div>

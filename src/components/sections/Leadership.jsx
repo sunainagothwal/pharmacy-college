@@ -4,27 +4,26 @@ import principal from "../../assets/images/principal.jpg";
 export default function Leadership() {
   return (
     <section className="bg-white">
-      <div
-        className="py-24"
-        style={{ paddingLeft: "20%", paddingRight: "20%" }}
-      >
-        <h3 className="text-2xl font-semibold text-blue-900 text-center">
+      <div className="py-24" style={{ paddingLeft: "5%", paddingRight: "5%" }}>
+        <h3 className="text-2xl font-semibold text-primary text-center">
           Leadership
         </h3>
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-16">
-          <div className="flex gap-6 items-start">
-            <img
-              src={director}
-              alt="Director"
-              className="w-32 h-40 object-cover"
-            />
+          <div className="flex gap-10 items-start">
+            <div className="bg-white p-3 shadow-md">
+              <img
+                src={director}
+                alt="Chairman"
+                className="w-[740px] h-[250px] object-cover"
+              />
+            </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-gray-800">
+              <h4 className="text-lg font-semibold text-textDark">
                 Mr. Parth Narayan Gaikwad
               </h4>
-              <p className="text-sm text-blue-900 mt-1">Chairman</p>
+              <p className="text-sm text-primary mt-1">Chairman</p>
 
               <p className="mt-4 text-sm text-gray-700 leading-relaxed">
                 The leadership envisions providing quality education that
@@ -36,18 +35,20 @@ export default function Leadership() {
             </div>
           </div>
 
-          <div className="flex gap-6 items-start">
-            <img
-              src={principal}
-              alt="Principal"
-              className="w-32 h-40 object-cover"
-            />
+          <div className="flex gap-10 items-start">
+            <div className="bg-white p-3 shadow-md">
+              <img
+                src={principal}
+                alt="Principal"
+                className="w-[740px] h-[250px] object-cover"
+              />
+            </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-gray-800">
+              <h4 className="text-lg font-semibold text-textDark">
                 Dr. Hedgapure Mahesh S.
               </h4>
-              <p className="text-sm text-blue-900 mt-1">Principal</p>
+              <p className="text-sm text-primary mt-1">Principal</p>
 
               <p className="mt-4 text-sm text-gray-700 leading-relaxed">
                 The college is committed to fostering academic rigor,

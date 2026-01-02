@@ -2,7 +2,7 @@ export default function Courses() {
   return (
     <section className="bg-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24">
-        <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-blue-900 text-center">
+        <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-primary text-center">
           Courses Offered
         </h3>
 
@@ -13,8 +13,8 @@ export default function Courses() {
         </p>
 
         <div className="mt-8 sm:mt-12 lg:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
-          <div className="bg-white p-6 sm:p-8 shadow-sm hover:shadow-md transition">
-            <h4 className="text-base sm:text-lg font-semibold text-gray-800">
+          <div className="bg-white p-6 sm:p-8 border-l-4 border-primary shadow-sm hover:shadow-md transition">
+            <h4 className="text-base sm:text-lg font-semibold text-textDark">
               Diploma in Pharmacy (D.Pharm)
             </h4>
 
@@ -33,8 +33,8 @@ export default function Courses() {
             </ul>
           </div>
 
-          <div className="bg-white p-6 sm:p-8 shadow-sm hover:shadow-md transition">
-            <h4 className="text-base sm:text-lg font-semibold text-gray-800">
+          <div className="bg-white p-6 sm:p-8 border-l-4 border-primary shadow-sm hover:shadow-md transition">
+            <h4 className="text-base sm:text-lg font-semibold text-textDark">
               Bachelor of Pharmacy (B.Pharm)
             </h4>
 
@@ -53,8 +53,8 @@ export default function Courses() {
             </ul>
           </div>
 
-          <div className="bg-white p-6 sm:p-8 shadow-sm hover:shadow-md transition">
-            <h4 className="text-base sm:text-lg font-semibold text-gray-800">
+          <div className="bg-white p-6 sm:p-8 border-l-4 border-primary shadow-sm hover:shadow-md transition">
+            <h4 className="text-base sm:text-lg font-semibold text-textDark">
               Direct Second Year (B.Pharm)
             </h4>
 
