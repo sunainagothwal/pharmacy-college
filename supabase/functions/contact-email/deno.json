@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "lib": ["deno.ns", "dom"],
+    "strict": true
+  },
+  "imports": {
+    "@std/http": "https://deno.land/std@0.224.0/http/server.ts",
+    "nodemailer": "npm:nodemailer@6.9.8"
+  }
+}

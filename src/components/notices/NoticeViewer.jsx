@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from "sonner";
 import { Document, Page } from "react-pdf";
 
 export default function NoticeViewer({ fileUrl, onClose }) {
@@ -19,7 +20,9 @@ export default function NoticeViewer({ fileUrl, onClose }) {
 
       window.URL.revokeObjectURL(link.href);
     } catch (e) {
-      alert("Failed to download: " + e.message);
+      toast.error("Failed to download: " + e.message, {
+        duration: 4000,
+      });
     }
   }
 
@@ -52,24 +55,24 @@ export default function NoticeViewer({ fileUrl, onClose }) {
           {page} / {numPages || "—"}
         </strong>
 
-        <button disabled={page <= 1} onClick={() => setPage(p => p - 1)}>
+        <button disabled={page <= 1} onClick={() => setPage((p) => p - 1)}>
           ◀ Prev
         </button>
 
         <button
           disabled={!numPages || page >= numPages}
-          onClick={() => setPage(p => p + 1)}
+          onClick={() => setPage((p) => p + 1)}
         >
           Next ▶
         </button>
 
         <span style={{ marginLeft: 20 }}>Zoom</span>
-        <button onClick={() => setScale(s => Math.max(0.5, s - 0.2))}>
+        <button onClick={() => setScale((s) => Math.max(0.5, s - 0.2))}>
           -
         </button>
-        <button onClick={() => setScale(s => s + 0.2)}>+</button>
+        <button onClick={() => setScale((s) => s + 0.2)}>+</button>
 
-        <button onClick={() => setRotate(r => r + 90)}>🔄 Rotate</button>
+        <button onClick={() => setRotate((r) => r + 90)}>🔄 Rotate</button>
 
         <button
           onClick={handleDownload}
@@ -78,9 +81,7 @@ export default function NoticeViewer({ fileUrl, onClose }) {
           ⬇ Download
         </button>
 
-        <button onClick={() => window.open(fileUrl, "_blank")}>
-          🖨 Print
-        </button>
+        <button onClick={() => window.open(fileUrl, "_blank")}>🖨 Print</button>
       </div>
 
       {/* PDF */}

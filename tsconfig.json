@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "strict": false,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+
+    "allowJs": true,
+    "checkJs": false,
+
+    "noEmit": true
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "supabase"
+  ]
+}
