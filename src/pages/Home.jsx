@@ -1,5 +1,5 @@
 import QuoteLine from "../components/sections/QuoteLine";
-import NoticeSlider from "../components/sections/NoticeSliders";
+// import NoticeSlider from "../components/sections/NoticeSliders";
 import About from "../components/sections/About";
 import Leadership from "../components/sections/Leadership";
 import Courses from "../components/sections/Courses";
@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <>
       <QuoteLine />
-      {/* <NoticesCarousel /> */}
-      <NoticeSlider />
+      <NoticesCarousel />
+      {/* <NoticeSlider /> */}
       <About />
       <Leadership />
       <Courses />

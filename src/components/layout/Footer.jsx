@@ -14,7 +14,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <div>
+          {/* <div>
             <h4 className="text-xs sm:text-sm font-semibold mb-4">
               Quick Links
             </h4>
@@ -24,7 +24,7 @@ export default function Footer() {
               <li className="hover:text-white transition">Courses</li>
               <li className="hover:text-white transition">Faculty</li>
             </ul>
-          </div>
+          </div> */}
 
           <div>
             <h4 className="text-xs sm:text-sm font-semibold mb-4">Contact</h4>

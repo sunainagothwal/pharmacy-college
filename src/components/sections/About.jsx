@@ -37,7 +37,7 @@ export default function About() {
             </div>
 
             <div className="relative w-full h-[420px]">
-              <div className="absolute bottom-8 left-0 right-0 flex gap-6 px-6">
+              <div className="absolute bottom-8 left-0 right-0 flex gap-6 px-6 mb-[7.5rem]">
                 <div className="flex-1 bg-primary text-white text-center py-6 font-medium">
                   Integrity
                 </div>

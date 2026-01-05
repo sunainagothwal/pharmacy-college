@@ -12,6 +12,7 @@ export default function Header() {
     { name: "Courses", path: "/courses" },
     { name: "Faculty", path: "/faculty" },
     { name: "FRA", path: "/fra" },
+    { name: "Gallery", path: "/gallery"},
     { name: "Contact", path: "/contact" },
   ];
 
@@ -37,9 +38,7 @@ export default function Header() {
 
           <div className="hidden md:flex items-center gap-4 sm:gap-5 text-xs sm:text-sm text-textDark">
             <span>📞 +91 7304955143</span>
-            <a href="#" className="hover:text-primary transition">
-              Facebook
-            </a>
+           
             <a href="#" className="hover:text-primary transition">
               Instagram
             </a>
