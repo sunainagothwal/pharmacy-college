@@ -5,13 +5,15 @@ import labImg from "../assets/images/about-lab.jpg";
 export default function AboutPage() {
   return (
     <main className="bg-white">
-      <section className="py-24">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-2xl font-semibold text-green-900 mb-4">
-              About the Institution
-            </h2>
-            <div className="w-16 h-[2px] bg-green-900 mb-8"></div>
+            <div className="inline-block mb-4">
+              <h2 className="text-2xl font-semibold text-green-900">
+                About the Institution
+              </h2>
+              <span className="block w-16 h-[2px] bg-green-900 mt-2"></span>
+            </div>
 
             <p className="text-sm text-gray-700 leading-relaxed mb-4">
               Swargiya Lilawati Satish Awhad Pharmacy College, Khandgaon (Kh.),
@@ -36,27 +38,29 @@ export default function AboutPage() {
             <img
               src={campusImg}
               alt="College Campus"
-              className="w-full h-[380px] object-cover"
+              className="w-full h-[320px] object-cover"
             />
           </div>
         </div>
       </section>
 
-      <section className="bg-gray-100 py-24">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+      <section className="bg-gray-100 py-16">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
           <div className="overflow-hidden shadow-lg">
             <img
               src={legacyImg}
               alt="College Legacy"
-              className="w-full h-[380px] object-cover"
+              className="w-full h-[320px] object-cover"
             />
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-green-900 mb-4">
-              Legacy & Inspiration
-            </h2>
-            <div className="w-16 h-[2px] bg-green-900 mb-8"></div>
+            <div className="inline-block mb-4">
+              <h2 className="text-2xl font-semibold text-green-900">
+                Legacy & Inspiration
+              </h2>
+              <span className="block w-16 h-[2px] bg-green-900 mt-2"></span>
+            </div>
 
             <p className="text-sm text-gray-700 leading-relaxed mb-4">
               The college is named in memory of Swargiya Lilawati Satish Awhad,
@@ -76,13 +80,15 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-24">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-2xl font-semibold text-green-900 mb-4">
-              Academic Excellence
-            </h2>
-            <div className="w-16 h-[2px] bg-green-900 mb-8"></div>
+            <div className="inline-block mb-4">
+              <h2 className="text-2xl font-semibold text-green-900">
+                Academic Excellence
+              </h2>
+              <span className="block w-16 h-[2px] bg-green-900 mt-2"></span>
+            </div>
 
             <p className="text-sm text-gray-700 leading-relaxed mb-4">
               The academic framework of the college is designed to balance
@@ -102,19 +108,19 @@ export default function AboutPage() {
             <img
               src={labImg}
               alt="Laboratory Facilities"
-              className="w-full h-[380px] object-cover"
+              className="w-full h-[320px] object-cover"
             />
           </div>
         </div>
       </section>
 
-      <section className="bg-gray-100 py-24">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
-          <div className="bg-white p-10 border border-gray-200">
-            <h3 className="text-xl font-semibold text-green-900 mb-4">
-              Vision
-            </h3>
-            <div className="w-12 h-[2px] bg-green-900 mb-6"></div>
+      <section className="bg-gray-100 py-16">
+        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+          <div className="bg-white p-8 border border-gray-200">
+            <div className="inline-block mb-3">
+              <h3 className="text-xl font-semibold text-green-900">Vision</h3>
+              <span className="block w-12 h-[2px] bg-green-900 mt-2"></span>
+            </div>
 
             <p className="text-sm text-gray-700 leading-relaxed mb-4">
               To emerge as a center of excellence in pharmaceutical education by
@@ -129,16 +135,16 @@ export default function AboutPage() {
               </li>
               <li>
                 To align pharmaceutical education with industry standards and
-                 best practices.
+                best practices.
               </li>
             </ul>
           </div>
 
-          <div className="bg-white p-10 border border-gray-200">
-            <h3 className="text-xl font-semibold text-green-900 mb-4">
-              Mission
-            </h3>
-            <div className="w-12 h-[2px] bg-green-900 mb-6"></div>
+          <div className="bg-white p-8 border border-gray-200">
+            <div className="inline-block mb-3">
+              <h3 className="text-xl font-semibold text-green-900">Mission</h3>
+              <span className="block w-12 h-[2px] bg-green-900 mt-2"></span>
+            </div>
 
             <ul className="text-sm text-gray-700 space-y-3 list-disc list-inside">
               <li>To provide quality education in pharmaceutical sciences</li>

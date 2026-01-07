@@ -40,16 +40,12 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="hidden md:flex items-center gap-4 text-xs sm:text-sm text-textDark">
-            <span>📞 +91 7304955143</span>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-primary transition"
-            >
-              Instagram
-            </a>
+          <div className="hidden md:flex items-start gap-2 text-xs sm:text-sm text-textDark">
+            <span>📞</span>
+            <span className="flex flex-col gap-1">
+              <span>+91 7304955143</span>
+              <span>+91 9403424325</span>
+            </span>
           </div>
 
           <button

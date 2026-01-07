@@ -9,3 +9,22 @@ body {
 .container {
   @apply max-w-[1400px] mx-auto px-4;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #166534;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #15803d;
+}
+
+.swiper-pagination-bullet {
+  background: #86efac;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #166534;
+}

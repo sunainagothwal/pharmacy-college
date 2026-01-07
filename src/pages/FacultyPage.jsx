@@ -32,38 +32,18 @@ export default function FacultyPage() {
 
   return (
     <section className="bg-white">
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <h2 className="text-3xl font-semibold text-green-800 text-center">
-          Our Faculty
-        </h2>
+      <div className="max-w-7xl mx-auto px-6 py-20">
+        <h1 className="text-3xl font-semibold text-green-900">Our Faculty</h1>
+        <div className="w-28 h-[2px] bg-green-900 mt-3"></div>
 
-        <p className="mt-4 text-sm text-gray-700 text-center max-w-3xl mx-auto">
-          The faculty at Swargiya Lilawati Satish Awhad Pharmacy College forms
-          the backbone of the institution. Our teaching staff comprises
-          qualified, experienced, and dedicated professionals committed to
-          academic excellence and student development.
+        <p className="mt-6 text-sm text-gray-700 max-w-3xl">
+          The faculty of Swargiya Lilawati Satish Awhad Pharmacy College
+          comprises experienced academicians and professionals dedicated to
+          delivering quality education, practical exposure, and ethical values
+          essential for pharmacy education.
         </p>
 
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="bg-gray-50 p-8 rounded shadow-sm">
-            <h3 className="text-lg font-semibold text-green-800 mb-4">
-              Faculty Strength
-            </h3>
-            <ul className="space-y-3 text-sm text-gray-700">
-              <li>Highly qualified and experienced teaching staff</li>
-              <li>Strong academic and practical background</li>
-              <li>Student-centric teaching methodology</li>
-              <li>Continuous academic guidance and mentoring</li>
-              <li>Commitment to ethical and professional values</li>
-            </ul>
-          </div>
-        </div>
-
-        <h3 className="mt-20 text-2xl font-semibold text-green-800 text-center">
-          Faculty Members
-        </h3>
-
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {facultyMembers.map((faculty, index) => (
             <div
               key={index}
@@ -93,30 +73,43 @@ export default function FacultyPage() {
           ))}
         </div>
 
-        <div className="bg-gray-50 p-8 rounded shadow-sm">
-          <h3 className="text-lg font-semibold text-green-800 mb-4">
-            Teaching & Learning Approach
-          </h3>
-          <ul className="space-y-3 text-sm text-gray-700">
-            <li>Interactive classroom lectures</li>
-            <li>Hands-on laboratory training</li>
-            <li>Case-based and concept-driven learning</li>
-            <li>Regular internal assessments</li>
-            <li>Individual student mentoring</li>
-          </ul>
-        </div>
-
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-12">
           <div className="bg-gray-50 p-8 rounded shadow-sm">
-            <h3 className="text-lg font-semibold text-green-800 mb-4">
+            <h3 className="text-lg font-semibold text-green-900 mb-4">
+              Faculty Strength
+            </h3>
+            <ul className="space-y-3 text-sm text-gray-700">
+              <li>Highly qualified and experienced faculty members</li>
+              <li>Strong academic, research, and industry background</li>
+              <li>Balanced emphasis on theory and practical learning</li>
+              <li>Student-focused academic guidance</li>
+              <li>Commitment to ethical and professional standards</li>
+            </ul>
+          </div>
+
+          <div className="bg-gray-50 p-8 rounded shadow-sm">
+            <h3 className="text-lg font-semibold text-green-900 mb-4">
+              Teaching & Learning Approach
+            </h3>
+            <ul className="space-y-3 text-sm text-gray-700">
+              <li>Outcome-based and interactive classroom teaching</li>
+              <li>Hands-on laboratory and practical sessions</li>
+              <li>Case studies, seminars, and presentations</li>
+              <li>Regular assessments and academic reviews</li>
+              <li>Use of modern teaching methodologies</li>
+            </ul>
+          </div>
+
+          <div className="bg-gray-50 p-8 rounded shadow-sm">
+            <h3 className="text-lg font-semibold text-green-900 mb-4">
               Student Support & Mentorship
             </h3>
             <ul className="space-y-3 text-sm text-gray-700">
-              <li>Academic counseling</li>
-              <li>Exam preparation guidance</li>
-              <li>Career and higher studies advice</li>
-              <li>Continuous performance evaluation</li>
-              <li>Encouragement for professional growth</li>
+              <li>Personalized academic mentoring</li>
+              <li>Guidance for examinations and performance improvement</li>
+              <li>Career counseling and higher education support</li>
+              <li>Continuous progress monitoring</li>
+              <li>Encouragement for overall professional growth</li>
             </ul>
           </div>
         </div>

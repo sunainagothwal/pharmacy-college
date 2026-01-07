@@ -5,38 +5,42 @@ import labImg from "../assets/images/course-lab.jpg";
 export default function CoursesPage() {
   return (
     <main className="bg-white">
-   
       <section className="bg-gray-50 border-b">
-        <div className="max-w-7xl mx-auto px-6 py-20">
-          <h1 className="text-3xl font-semibold text-green-900">
-            Courses Offered
-          </h1>
-          <div className="w-24 h-[2px] bg-green-900 mt-3"></div>
+        <div className="max-w-7xl mx-auto px-6 py-16">
+          <div className="inline-block">
+            <h1 className="text-3xl font-semibold text-green-900">
+              Courses Offered
+            </h1>
+            <span className="block w-24 h-[2px] bg-green-900 mt-2"></span>
+          </div>
 
-          <p className="mt-6 text-sm text-gray-700 max-w-3xl leading-relaxed">
-            Swargiya Lilawati Satish Awhad Pharmacy College offers professional
-            pharmacy education designed to build strong academic foundations,
-            practical skills, and ethical values aligned with industry and
-            healthcare needs.
+          <p className="mt-5 text-sm text-gray-700 max-w-3xl leading-relaxed">
+            Swargiya Lilawati Satish Awhad Pharmacy College offers comprehensive
+            pharmacy education programs approved by statutory bodies, focusing
+            on academic excellence, practical exposure, and professional
+            competence in healthcare and pharmaceutical sciences.
           </p>
         </div>
       </section>
 
-      <section className="py-7">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-              Diploma in Pharmacy (D.Pharm)
-            </h2>
+            <div className="inline-block mb-4">
+              <h2 className="text-2xl font-semibold text-green-900">
+                Diploma in Pharmacy (D.Pharm)
+              </h2>
+              <span className="block w-20 h-[2px] bg-green-900 mt-2"></span>
+            </div>
 
-            <p className="text-sm text-gray-700 leading-relaxed mb-6">
-              The Diploma in Pharmacy (D.Pharm) is a foundational professional
-              program designed to prepare students for careers in community
-              pharmacy, hospitals, pharmaceutical industries, and healthcare
-              services.
+            <p className="text-sm text-gray-700 leading-relaxed mb-5">
+              A two-year diploma program designed to build a strong foundation
+              in pharmaceutical sciences, dispensing techniques, and patient
+              care. The program prepares students for professional practice in
+              retail and hospital pharmacies.
             </p>
 
-            <div className="grid grid-cols-2 gap-4 text-sm text-gray-700">
+            <div className="grid grid-cols-2 gap-3 text-sm text-gray-700">
               <p>
                 <strong>Duration:</strong> 2 Years
               </p>
@@ -47,7 +51,7 @@ export default function CoursesPage() {
                 <strong>Mode:</strong> Full-Time
               </p>
               <p>
-                <strong>Eligibility:</strong> As per PCI norms
+                <strong>Approval:</strong> PCI
               </p>
             </div>
           </div>
@@ -55,128 +59,123 @@ export default function CoursesPage() {
           <div className="shadow-lg overflow-hidden">
             <img
               src={heroImg}
-              alt="Pharmacy Course"
-              className="w-full h-[360px] object-cover"
+              alt="Diploma in Pharmacy"
+              className="w-full h-[300px] object-cover"
             />
           </div>
         </div>
       </section>
 
-      <section className="bg-gray-50 py-24">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+      <section className="bg-gray-50 py-16">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
           <div className="shadow-lg overflow-hidden">
             <img
               src={classImg}
-              alt="Classroom Teaching"
-              className="w-full h-[360px] object-cover"
+              alt="B.Pharm Classroom"
+              className="w-full h-[300px] object-cover"
             />
           </div>
 
           <div>
-            <h3 className="text-2xl font-semibold text-green-900 mb-4">
-              Course Description
-            </h3>
-
-            <p className="text-sm text-gray-700 leading-relaxed mb-4">
-              The D.Pharm program is structured to provide students with strong
-              theoretical knowledge and extensive hands-on practical exposure.
-              The curriculum emphasizes drug formulation, dispensing, patient
-              care, and ethical pharmacy practice.
-            </p>
-
-            <p className="text-sm text-gray-700 leading-relaxed">
-              Teaching is supported through classroom instruction, laboratory
-              training, case-based learning, industrial exposure, and hospital
-              visits to ensure students are industry-ready.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-24">
-        <div className="max-w-7xl mx-auto px-6">
-          <h3 className="text-2xl font-semibold text-green-900 mb-12">
-            Subjects Covered
-          </h3>
-
-          <div className="grid md:grid-cols-2 gap-12">
-            <div>
-              <h4 className="text-lg font-semibold text-gray-800 mb-4">
-                First Year
-              </h4>
-              <ul className="list-disc list-inside text-sm text-gray-700 space-y-2">
-                <li>Pharmaceutics</li>
-                <li>Pharmaceutical Chemistry</li>
-                <li>Pharmacognosy</li>
-                <li>Human Anatomy & Physiology</li>
-                <li>Health Education & Community Pharmacy</li>
-              </ul>
+            <div className="inline-block mb-4">
+              <h2 className="text-2xl font-semibold text-green-900">
+                Bachelor of Pharmacy (B.Pharm)
+              </h2>
+              <span className="block w-20 h-[2px] bg-green-900 mt-2"></span>
             </div>
 
-            <div>
-              <h4 className="text-lg font-semibold text-gray-800 mb-4">
-                Second Year
-              </h4>
-              <ul className="list-disc list-inside text-sm text-gray-700 space-y-2">
-                <li>Pharmacology</li>
-                <li>Pharmaceutical Jurisprudence</li>
-                <li>Drug Store & Business Management</li>
-                <li>Hospital & Clinical Pharmacy</li>
-              </ul>
+            <p className="text-sm text-gray-700 leading-relaxed mb-5">
+              A four-year undergraduate degree program emphasizing
+              pharmaceutical technology, medicinal chemistry, pharmacology,
+              pharmacognosy, and research methodologies. The course develops
+              industry-ready professionals with strong scientific and analytical
+              skills.
+            </p>
+
+            <div className="grid grid-cols-2 gap-3 text-sm text-gray-700">
+              <p>
+                <strong>Duration:</strong> 4 Years
+              </p>
+              <p>
+                <strong>Course Type:</strong> Degree
+              </p>
+              <p>
+                <strong>Mode:</strong> Full-Time
+              </p>
+              <p>
+                <strong>Approval:</strong> PCI & AICTE
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-gray-50 py-24">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h3 className="text-2xl font-semibold text-green-900 mb-4">
-              Practical Training
-            </h3>
+            <div className="inline-block mb-4">
+              <h2 className="text-2xl font-semibold text-green-900">
+                Direct Second Year (B.Pharm)
+              </h2>
+              <span className="block w-20 h-[2px] bg-green-900 mt-2"></span>
+            </div>
 
-            <ul className="list-disc list-inside text-sm text-gray-700 space-y-2">
-              <li>Fully equipped laboratories</li>
-              <li>Formulation, compounding, and dispensing practice</li>
-              <li>Prescription handling and patient counseling</li>
-              <li>Industrial visits and professional workshops</li>
+            <p className="text-sm text-gray-700 leading-relaxed mb-5">
+              A lateral entry program for D.Pharm diploma holders, allowing
+              direct admission into the second year of the B.Pharm course as per
+              regulatory norms.
+            </p>
+
+            <ul className="list-disc list-inside text-sm text-gray-700 space-y-1.5">
+              <li>Eligibility: Diploma in Pharmacy (D.Pharm)</li>
+              <li>Admission as per government regulations</li>
+              <li>Industry-oriented curriculum</li>
+              <li>Equal academic standards as regular B.Pharm</li>
             </ul>
           </div>
 
           <div className="shadow-lg overflow-hidden">
             <img
               src={labImg}
-              alt="Laboratory Training"
-              className="w-full h-[360px] object-cover"
+              alt="Pharmacy Laboratory"
+              className="w-full h-[300px] object-cover"
             />
           </div>
         </div>
       </section>
 
-      <section className="py-24">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+      <section className="bg-gray-50 py-16">
+        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10">
           <div>
-            <h3 className="text-xl font-semibold text-green-900 mb-4">
-              Career Opportunities
-            </h3>
-            <ul className="list-disc list-inside text-sm text-gray-700 space-y-2">
-              <li>Community Pharmacist</li>
-              <li>Hospital Pharmacist</li>
-              <li>Medical Store Manager</li>
-              <li>Pharmaceutical Sales Executive</li>
-              <li>Quality Control Assistant</li>
-              <li>Higher Studies (B.Pharm)</li>
+            <div className="inline-block mb-3">
+              <h3 className="text-xl font-semibold text-green-900">
+                Practical Training & Facilities
+              </h3>
+              <span className="block w-16 h-[2px] bg-green-900 mt-2"></span>
+            </div>
+
+            <ul className="list-disc list-inside text-sm text-gray-700 space-y-1.5">
+              <li>Modern and fully equipped laboratories</li>
+              <li>Hands-on formulation and dispensing practice</li>
+              <li>Clinical pharmacy and hospital exposure</li>
+              <li>Industrial visits and professional workshops</li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-green-900 mb-4">
-              Admission Information
-            </h3>
-            <ul className="list-disc list-inside text-sm text-gray-700 space-y-2">
-              <li>Admissions as per Government & PCI guidelines</li>
-              <li>Reservation rules applicable</li>
-              <li>Document verification mandatory</li>
+            <div className="inline-block mb-3">
+              <h3 className="text-xl font-semibold text-green-900">
+                Career Opportunities
+              </h3>
+              <span className="block w-16 h-[2px] bg-green-900 mt-2"></span>
+            </div>
+
+            <ul className="list-disc list-inside text-sm text-gray-700 space-y-1.5">
+              <li>Community and Hospital Pharmacist</li>
+              <li>Pharmaceutical Industry & Research</li>
+              <li>Quality Control & Assurance</li>
+              <li>Medical Sales & Marketing</li>
+              <li>Higher Studies and Professional Growth</li>
             </ul>
           </div>
         </div>

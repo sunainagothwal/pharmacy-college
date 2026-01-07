@@ -13,8 +13,7 @@ import "react-pdf/dist/Page/TextLayer.css";
 
 import NoticeViewer from "./NoticeViewer";
 
-pdfjs.GlobalWorkerOptions.workerSrc =
-  `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const BUCKET = "notices";
 
@@ -32,9 +31,10 @@ export default function NoticesCarousel() {
       if (error) return console.error(error);
 
       const urls = data
-        .filter(f => !f.name.startsWith("."))
-        .map(f =>
-          supabase.storage.from(BUCKET).getPublicUrl(f.name).data.publicUrl
+        .filter((f) => !f.name.startsWith("."))
+        .map(
+          (f) =>
+            supabase.storage.from(BUCKET).getPublicUrl(f.name).data.publicUrl
         );
 
       setFiles(urls);
@@ -47,7 +47,15 @@ export default function NoticesCarousel() {
 
   return (
     <>
-      <h2 style={{ textAlign: "center", margin: "20px 0" }}>
+      <h2
+        style={{
+          textAlign: "center",
+          margin: "30px 0",
+          color: "#166534",
+          fontWeight: "600",
+          fontSize: "22px",
+        }}
+      >
         Latest Notices
       </h2>
 
@@ -62,11 +70,14 @@ export default function NoticesCarousel() {
         style={{
           width: "100%",
           maxWidth: "1000px",
-          height: "90vh",
-          margin: "0 auto"
+          height: "85vh",
+          margin: "0 auto",
+          background: "#f0fdf4",
+          borderRadius: "6px",
+          boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
         }}
       >
-        {files.map(url => (
+        {files.map((url) => (
           <SwiperSlide key={url}>
             <div
               onClick={() => {
@@ -77,22 +88,31 @@ export default function NoticesCarousel() {
                 width: "100%",
                 height: "100%",
                 overflowY: "auto",
-                background: "#111",
+                background: "#ecfdf5",
                 display: "flex",
                 justifyContent: "center",
-                cursor: "pointer"
+                alignItems: "center",
+                cursor: "pointer",
+                padding: "16px",
               }}
             >
-              <Document file={url}>
-                <Page
-                  pageNumber={1}
-                  width={
-                    window.innerWidth > 800
-                      ? 800
-                      : window.innerWidth - 20
-                  }
-                />
-              </Document>
+              <div
+                style={{
+                  background: "#ffffff",
+                  padding: "12px",
+                  borderRadius: "4px",
+                  border: "1px solid #bbf7d0",
+                }}
+              >
+                <Document file={url}>
+                  <Page
+                    pageNumber={1}
+                    width={
+                      window.innerWidth > 800 ? 780 : window.innerWidth - 40
+                    }
+                  />
+                </Document>
+              </div>
             </div>
           </SwiperSlide>
         ))}

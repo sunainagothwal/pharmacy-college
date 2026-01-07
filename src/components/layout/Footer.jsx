@@ -1,3 +1,5 @@
+import instagramIcon from "../../assets/images/instagram.png";
+
 export default function Footer() {
   return (
     <footer className="bg-green-800 text-white">
@@ -31,6 +33,17 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Working Hours</h4>
             <p className="text-sm text-white/90">Monday – Friday</p>
             <p className="text-sm text-white/90">9:00 AM – 5:00 PM</p>
+            <a
+              href="https://www.instagram.com/yourpage"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center gap-2"
+            >
+              <img src={instagramIcon} alt="Instagram" className="w-5 h-5" />
+              <span className="text-sm text-white/90 hover:text-pink-400 transition">
+                Instagram
+              </span>
+            </a>
           </div>
         </div>
       </div>
