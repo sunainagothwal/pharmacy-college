@@ -95,7 +95,10 @@ export default function Contact() {
           </div>
 
           <div className="bg-white p-6 sm:p-8 lg:p-10 shadow-sm">
-            <form className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+            <form
+              className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6"
+              onSubmit={submitForm}
+            >
               <input
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
