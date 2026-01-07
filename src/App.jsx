@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { Toaster } from "sonner";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 
@@ -23,6 +24,13 @@ function DefaultLayout({ children }) {
 
 export default function App() {
   return (
+    <>
+    <Toaster
+        position="top-center"
+        richColors
+        closeButton
+        expand
+      />
     <Routes>
       {/* Public Website Pages */}
       <Route
@@ -83,5 +91,6 @@ export default function App() {
       <Route path="/login" element={<AdminLogin />} />
       <Route path="/admin" element={<AdminDashboard />} />
     </Routes>
+    </>
   );
 }

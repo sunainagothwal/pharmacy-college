@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { toast } from "sonner";
 import { supabase } from "./supabase";
 import { useNavigate } from "react-router-dom";
 
@@ -72,13 +73,13 @@ export default function AdminDashboard() {
   }
 
   const uploadNotice = async () => {
-    if (!file) return alert("Please select a file");
+    if (!file) return toast.error("Please select a file", {duration: 4000}); 
 
     const allowed = ["pdf"];
 const ext = file.name.split(".").pop().toLowerCase();
 
 if (!allowed.includes(ext)) {
-  alert("Only PDF files are allowed");
+  toast.error("Only PDF files are allowed", {duration: 4000});
   return;
 }
 
@@ -88,11 +89,11 @@ if (!allowed.includes(ext)) {
       .upload(fileName, file, { cacheControl: "3600" });
 
     if (error) {
-      alert(error.message || "Upload failed");
+      toast.error(error.message || "Upload failed", {duration: 4000});
       return;
     }
 
-    alert("Uploaded Successfully");
+    toast.success("Uploaded Successfully", {duration: 4000});
     setFile(null);
     loadNotices();
   };
@@ -105,7 +106,7 @@ if (!allowed.includes(ext)) {
       .remove([fileName]);
 
     if (error) {
-      alert("Delete failed");
+      toast.error("Delete failed", {duration: 4000});
       return;
     }
 
