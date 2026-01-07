@@ -11,8 +11,12 @@ export default function Header() {
     { name: "About", path: "/about" },
     { name: "Courses", path: "/courses" },
     { name: "Faculty", path: "/faculty" },
-    { name: "FRA", path: "/fra" },
-    { name: "Gallery", path: "/gallery"},
+    {
+      name: "FRA",
+      path: "https://ay25-26.mahafraportal.org/ssi_prp_24/outer.php?q=fee_search_report",
+      external: true,
+    },
+    { name: "Gallery", path: "/gallery" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -36,10 +40,14 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="hidden md:flex items-center gap-4 sm:gap-5 text-xs sm:text-sm text-textDark">
+          <div className="hidden md:flex items-center gap-4 text-xs sm:text-sm text-textDark">
             <span>📞 +91 7304955143</span>
-           
-            <a href="#" className="hover:text-primary transition">
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition"
+            >
               Instagram
             </a>
           </div>
@@ -73,37 +81,64 @@ export default function Header() {
       <nav className="bg-primary sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="hidden md:flex items-center justify-center h-14">
-            {navItems.map((item) => (
-              <NavLink
-                key={item.name}
-                to={item.path}
-                className={({ isActive }) =>
-                  `h-14 flex-1 max-w-[150px] flex items-center justify-center text-xs sm:text-sm font-medium text-white transition ${
-                    isActive ? "bg-primaryDark" : "hover:bg-primaryDark"
-                  }`
-                }
-              >
-                {item.name}
-              </NavLink>
-            ))}
+            {navItems.map((item) =>
+              item.external ? (
+                <a
+                  key={item.name}
+                  href={item.path}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="h-14 flex-1 max-w-[150px] flex items-center justify-center text-xs sm:text-sm font-medium text-white transition hover:bg-primaryDark"
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <NavLink
+                  key={item.name}
+                  to={item.path}
+                  end={item.path === "/"}
+                  className={({ isActive }) =>
+                    `h-14 flex-1 max-w-[150px] flex items-center justify-center text-xs sm:text-sm font-medium text-white transition ${
+                      isActive ? "bg-primaryDark" : "hover:bg-primaryDark"
+                    }`
+                  }
+                >
+                  {item.name}
+                </NavLink>
+              )
+            )}
           </div>
 
           {isMenuOpen && (
             <div className="md:hidden flex flex-col bg-primaryDark">
-              {navItems.map((item) => (
-                <NavLink
-                  key={item.name}
-                  to={item.path}
-                  className={({ isActive }) =>
-                    `h-12 flex items-center justify-center text-sm font-medium text-white transition ${
-                      isActive ? "bg-primary" : "hover:bg-primary"
-                    }`
-                  }
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </NavLink>
-              ))}
+              {navItems.map((item) =>
+                item.external ? (
+                  <a
+                    key={item.name}
+                    href={item.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="h-12 flex items-center justify-center text-sm font-medium text-white transition hover:bg-primary"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <NavLink
+                    key={item.name}
+                    to={item.path}
+                    end={item.path === "/"}
+                    className={({ isActive }) =>
+                      `h-12 flex items-center justify-center text-sm font-medium text-white transition ${
+                        isActive ? "bg-primary" : "hover:bg-primary"
+                      }`
+                    }
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.name}
+                  </NavLink>
+                )
+              )}
             </div>
           )}
         </div>
@@ -120,7 +155,8 @@ export default function Header() {
           <div className="text-white max-w-xs sm:max-w-md lg:max-w-lg">
             <p className="text-xs sm:text-sm mb-2 tracking-wide">Welcome to</p>
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold leading-tight">
-              Swargiya Lilawati Satish Awhad <br className="hidden sm:block" />
+              Swargiya Lilawati Satish Awhad
+              <br className="hidden sm:block" />
               Pharmacy College
             </h2>
             <p className="mt-4 text-xs sm:text-sm text-white/90">

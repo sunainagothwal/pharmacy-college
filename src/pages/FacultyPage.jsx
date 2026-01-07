@@ -57,19 +57,6 @@ export default function FacultyPage() {
               <li>Commitment to ethical and professional values</li>
             </ul>
           </div>
-
-          <div className="bg-gray-50 p-8 rounded shadow-sm">
-            <h3 className="text-lg font-semibold text-green-800 mb-4">
-              Teaching & Learning Approach
-            </h3>
-            <ul className="space-y-3 text-sm text-gray-700">
-              <li>Interactive classroom lectures</li>
-              <li>Hands-on laboratory training</li>
-              <li>Case-based and concept-driven learning</li>
-              <li>Regular internal assessments</li>
-              <li>Individual student mentoring</li>
-            </ul>
-          </div>
         </div>
 
         <h3 className="mt-20 text-2xl font-semibold text-green-800 text-center">
@@ -106,6 +93,19 @@ export default function FacultyPage() {
           ))}
         </div>
 
+        <div className="bg-gray-50 p-8 rounded shadow-sm">
+          <h3 className="text-lg font-semibold text-green-800 mb-4">
+            Teaching & Learning Approach
+          </h3>
+          <ul className="space-y-3 text-sm text-gray-700">
+            <li>Interactive classroom lectures</li>
+            <li>Hands-on laboratory training</li>
+            <li>Case-based and concept-driven learning</li>
+            <li>Regular internal assessments</li>
+            <li>Individual student mentoring</li>
+          </ul>
+        </div>
+
         <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="bg-gray-50 p-8 rounded shadow-sm">
             <h3 className="text-lg font-semibold text-green-800 mb-4">
@@ -117,18 +117,6 @@ export default function FacultyPage() {
               <li>Career and higher studies advice</li>
               <li>Continuous performance evaluation</li>
               <li>Encouragement for professional growth</li>
-            </ul>
-          </div>
-
-          <div className="bg-gray-50 p-8 rounded shadow-sm">
-            <h3 className="text-lg font-semibold text-green-800 mb-4">
-              Industry & Practical Exposure
-            </h3>
-            <ul className="space-y-3 text-sm text-gray-700">
-              <li>Industrial visits</li>
-              <li>Seminars and workshops</li>
-              <li>Guest lectures by industry experts</li>
-              <li>Guidance in professional training</li>
             </ul>
           </div>
         </div>

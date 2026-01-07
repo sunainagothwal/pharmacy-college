@@ -4,17 +4,13 @@ export default function About() {
   return (
     <section
       className="relative bg-cover bg-center"
-      style={{
-        backgroundImage: `url(${aboutBg})`,
-      }}
+      style={{ backgroundImage: `url(${aboutBg})` }}
     >
       <div className="bg-white/80">
-        <div
-          className="py-24"
-          style={{ paddingLeft: "20%", paddingRight: "20%" }}
-        >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="bg-white p-10 shadow-md">
+        <div className="py-16 sm:py-20 lg:py-24 px-4 sm:px-8 lg:px-[20%]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            {/* TEXT CARD */}
+            <div className="bg-white p-8 sm:p-10 shadow-md">
               <h3 className="text-2xl font-semibold text-primary">About Us</h3>
 
               <p className="mt-6 text-sm text-gray-700 leading-relaxed">
@@ -36,8 +32,15 @@ export default function About() {
               </p>
             </div>
 
-            <div className="relative w-full h-[420px]">
-              <div className="absolute bottom-8 left-0 right-0 flex gap-6 px-6 mb-[7.5rem]">
+            {/* VALUES */}
+            <div className="relative w-full lg:h-[420px]">
+              <div
+                className="
+                  flex flex-col sm:flex-row gap-4
+                  lg:absolute lg:bottom-8 lg:left-0 lg:right-0 lg:px-6
+                  lg:mb-[7.5rem]
+                "
+              >
                 <div className="flex-1 bg-primary text-white text-center py-6 font-medium">
                   Integrity
                 </div>
