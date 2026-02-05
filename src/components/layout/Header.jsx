@@ -157,7 +157,7 @@ export default function Header() {
               <br className="hidden sm:block" />
               Pharmacy College
             </h2>
-            <p className="mt-4 text-[1.01rem] text-[#F8FAF9]/90 leading-relaxed drop-shadow-md">
+            <p className="mt-4 text-[0.8rem] text-[#F8FAF9]/90 leading-relaxed drop-shadow-md">
               Committed to excellence in pharmaceutical education, research, and
               ethical professional practices.
             </p>
