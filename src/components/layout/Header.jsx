@@ -101,7 +101,7 @@ export default function Header() {
                 >
                   {item.name}
                 </NavLink>
-              )
+              ),
             )}
           </div>
 
@@ -133,7 +133,7 @@ export default function Header() {
                   >
                     {item.name}
                   </NavLink>
-                )
+                ),
               )}
             </div>
           )}
@@ -148,14 +148,16 @@ export default function Header() {
         />
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="absolute inset-0 flex items-center px-4 sm:px-6 lg:px-16">
-          <div className="text-white max-w-xs sm:max-w-md lg:max-w-lg">
-            <p className="text-xs sm:text-sm mb-2 tracking-wide">Welcome to</p>
+          <div className="text-[#F8FAF9] font-bold drop-shadow-lg max-w-xs sm:max-w-md lg:max-w-lg">
+            <p className="text-base sm:text-lg lg:text-xl mb-3 tracking-wide text-[#F8FAF9] font-semibold drop-shadow-md">
+              Welcome to
+            </p>
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold leading-tight">
               Swargiya Lilawati Satish Awhad
               <br className="hidden sm:block" />
               Pharmacy College
             </h2>
-            <p className="mt-4 text-xs sm:text-sm text-white/90">
+            <p className="mt-4 text-[1.01rem] text-[#F8FAF9]/90 leading-relaxed drop-shadow-md">
               Committed to excellence in pharmaceutical education, research, and
               ethical professional practices.
             </p>
